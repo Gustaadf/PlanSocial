@@ -1,0 +1,34 @@
+body {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding:16px;
+}
+
+a{
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+.hero-section {
+  height: 60vh; 
+ background: url("../imagens/banner.jpg") center/cover no-repeat;
+  color: white; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
+
