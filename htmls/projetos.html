@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projetos Sociais - PlanSocial</title>
-   <link rel="stylesheet" href="../css/projetos.css">
+  <link rel="stylesheet" href="../css/projetos.css" />
 </head>
 <body>
 
-  <nav>
-    <ul>
+  <nav class="menu">
+    <div class="logo">PlanSocial</div>
+    <ul class="menu-links">
       <li><a href="index.html">Início</a></li>
-
     </ul>
+    <div class="hamburger">&#9776;</div>
   </nav>
 
   <header class="projetos-header">
@@ -20,19 +21,29 @@
     <p>Conheça e acompanhe os projetos apoiados pelo PlanSocial.</p>
   </header>
 
-  <main>
-    <section class="projeto">
+  <main class="container">
+    <div class="card col-6">
       <h2>Projeto Esperança</h2>
       <p>Iniciativa voltada ao apoio de famílias em situação de vulnerabilidade, promovendo capacitação e acesso a recursos básicos.</p>
-    </section>
+      <span class="tag">Assistência Social</span>
+    </div>
 
-   <section class="projeto">
-  <h2>Projeto Letras Vivas</h2>
-  <p>O <strong>Projeto Letras Vivas</strong> tem como objetivo promover o acesso à leitura e à escrita em comunidades com baixo índice de alfabetização e incentivo cultural. A iniciativa reúne voluntários para organizar rodas de leitura, oficinas de escrita criativa e doações de livros.</p>
-  <p>Além de estimular o hábito da leitura, o projeto busca despertar o pensamento crítico e dar voz a novos autores locais, fortalecendo a cultura e a identidade da comunidade.</p>
-</section>
-
+    <div class="card col-6">
+      <h2>Projeto Letras Vivas</h2>
+      <p>O <strong>Projeto Letras Vivas</strong> tem como objetivo promover o acesso à leitura e à escrita em comunidades com baixo índice de alfabetização e incentivo cultural. A iniciativa reúne voluntários para organizar rodas de leitura, oficinas de escrita criativa e doações de livros.</p>
+      <p>Além de estimular o hábito da leitura, o projeto busca despertar o pensamento crítico e dar voz a novos autores locais, fortalecendo a cultura e a identidade da comunidade.</p>
+      <span class="tag">Educação</span>
+    </div>
   </main>
 
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const menuLinks = document.querySelector(".menu-links");
+
+    hamburger.addEventListener("click", () => {
+      menuLinks.style.display = menuLinks.style.display === "flex" ? "none" : "flex";
+    });
+  </script>
 </body>
 </html>

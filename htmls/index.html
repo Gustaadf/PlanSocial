@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlanSocial</title>
-    <link rel="stylesheet" href="../css/index.css">
-    
-    
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlanSocial</title>
+  <link rel="stylesheet" href="../css/index.css" />
 </head>
 <body>
-    <nav>
-        <ul>
-            
-            <li>
-                <a href="projetos.html">Projetos Sociais</a>
-            </li>
-            <li>
-                <a href="cadastro.html">Cadastro</a>
-            </li>
-        </ul>
-    </nav>
-    <header class="hero-section">
-  <h1>Bem-vindo ao PlanSocial</h1>
-  <p>Organize, acompanhe e amplifique o impacto dos seus projetos sociais.</p>
-    </header>
 
-    <main>
-        <section>
-            <h2>Sobre o PlanSocial</h2>
-            <p>O PlanSocial é uma plataforma dedicada a ajudar organizações e indivíduos a gerenciar seus projetos sociais de forma eficiente. Com ferramentas intuitivas, você pode planejar, monitorar e avaliar o impacto das suas iniciativas.</p>
-        </section>
-        <section>
-            <h2>Finalidade do projeto</h2>
-            <p> PlanSocial é uma plataforma web que permite às ONGs cadastrar voluntários e gerenciar projetos de forma prática e organizada, fortalecendo a colaboração e aumentando o impacto das ações sociais. </p>
-            
-        </section>
+  <nav class="menu">
+    <div class="logo">PlanSocial</div>
+    <ul class="menu-links">
+      <li><a href="projetos.html">Projetos Sociais</a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+    </ul>
+    <div class="hamburger">&#9776;</div>
+  </nav>
 
-    </main>
+  <header class="hero-section">
+    <h1>Bem-vindo ao PlanSocial</h1>
+    <p>Organize, acompanhe e amplifique o impacto dos seus projetos sociais.</p>
+  </header>
 
-    
+  <main class="container">
+    <section class="col-12">
+      <h2>Sobre o PlanSocial</h2>
+      <p>O PlanSocial é uma plataforma dedicada a ajudar organizações e indivíduos a gerenciar seus projetos sociais de forma eficiente. Com ferramentas intuitivas, você pode planejar, monitorar e avaliar o impacto das suas iniciativas.</p>
+    </section>
+
+    <section class="col-12">
+      <h2>Finalidade do projeto</h2>
+      <p>PlanSocial é uma plataforma web que permite às ONGs cadastrar voluntários e gerenciar projetos de forma prática e organizada, fortalecendo a colaboração e aumentando o impacto das ações sociais.</p>
+    </section>
+  </main>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const menuLinks = document.querySelector(".menu-links");
+
+    hamburger.addEventListener("click", () => {
+      menuLinks.style.display = menuLinks.style.display === "flex" ? "none" : "flex";
+    });
+  </script>
 </body>
 </html>
